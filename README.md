@@ -4,8 +4,8 @@ Permutate variables in a file
 # Usage:
 Supply an input file
 Execute GenerateFiles.ps1 with parameters:
-- -inputfile <name of inputfile>
-- -replacements <replacement tokens>
+- -inputfile &lt;name of inputfile&gt;
+- -replacements &lt;replacement tokens&gt;
 
 ## Replacement Tokens
 Semi colon separated pairs of replacement tokens, with comma separated sub-values;
