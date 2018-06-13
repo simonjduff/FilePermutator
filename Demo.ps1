@@ -1,0 +1,1 @@
+.\GenerateFiles.ps1 -replacements "ZID=1,2,3;ZWCUT=1.543,6.487" -templateFile testFile.txt

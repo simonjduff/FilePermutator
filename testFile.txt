@@ -1,0 +1,112 @@
+CASE author="Matt Healey", project="Bina Bawi BB3 tieback", title="Base input file", date="November 2011"
+
+OPTIONS phase=three, steadystate=on, temperature=fastwall
+
+FILES pvtfile=BB3.tab
+
+INTEGRATION dtstart=1 s, maxdt=10 s, mindt=0.01 s, starttime=0 s, endtime=10 h
+
+MATERIAL LABEL=Steel, CAPACITY=470 J/kg-C, CONDUCTIVITY=45 W/m-C, DENSITY=7850 kg/m3
+MATERIAL LABEL=PP, CAPACITY=1000 J/kg-C, CONDUCTIVITY=0.22 W/m-C, DENSITY=900 kg/m3
+MATERIAL LABEL=Soil, CAPACITY=840 J/kg-C, CONDUCTIVITY=2 W/m-C, DENSITY=2050 kg/m3
+
+Wall label=main, thickness=(ZWT, 6, 3, 6, 12, 24, 48, 90, 180, 240, 400)  mm, material=(steel, steel, PP, soil, soil, soil, soil, soil, soil, soil, soil)
+
+GEOMETRY label="BB3"
+PIPE label=pipe-1, wall=main, diameter=ZID m, roughness=0.025 mm, nsegment=2, lsegment=(2:30.05) m, length=60.1 m, elevation=2.1 m
+PIPE label=pipe-2, wall=main, diameter=ZID m, roughness=0.025 mm, nsegment=2, lsegment=(2:50) m, length=100 m, elevation=2.6 m
+PIPE label=pipe-3, wall=main, diameter=ZID m, roughness=0.025 mm, nsegment=2, lsegment=(2:50) m, length=100 m, elevation=-0.1 m
+PIPE label=pipe-4, wall=main, diameter=ZID m, roughness=0.025 mm, nsegment=2, lsegment=(2:50) m, length=100 m, elevation=1.5 m
+PIPE label=pipe-5, wall=main, diameter=ZID m, roughness=0.025 mm, nsegment=2, lsegment=(2:50) m, length=100 m, elevation=-0.2 m
+PIPE label=pipe-6, wall=main, diameter=ZID m, roughness=0.025 mm, nsegment=2, lsegment=(2:50) m, length=100 m, elevation=-0.4 m
+PIPE label=pipe-7, wall=main, diameter=ZID m, roughness=0.025 mm, nsegment=2, lsegment=(2:50) m, length=100 m, elevation=3.6 m
+PIPE label=pipe-8, wall=main, diameter=ZID m, roughness=0.025 mm, nsegment=2, lsegment=(2:50) m, length=100 m, elevation=-1.6 m
+PIPE label=pipe-9, wall=main, diameter=ZID m, roughness=0.025 mm, nsegment=2, lsegment=(2:50) m, length=100 m, elevation=-10.7 m
+PIPE label=pipe-10, wall=main, diameter=ZID m, roughness=0.025 mm, nsegment=2, lsegment=(2:50) m, length=100 m, elevation=-15.3 m
+PIPE label=pipe-11, wall=main, diameter=ZID m, roughness=0.025 mm, nsegment=2, lsegment=(2:50) m, length=100 m, elevation=-14 m
+PIPE label=pipe-12, wall=main, diameter=ZID m, roughness=0.025 mm, nsegment=2, lsegment=(2:50) m, length=100 m, elevation=-13.5 m
+PIPE label=pipe-13, wall=main, diameter=ZID m, roughness=0.025 mm, nsegment=2, lsegment=(2:50) m, length=100 m, elevation=-10.6 m
+PIPE label=pipe-14, wall=main, diameter=ZID m, roughness=0.025 mm, nsegment=2, lsegment=(2:50) m, length=100 m, elevation=-1 m
+PIPE label=pipe-15, wall=main, diameter=ZID m, roughness=0.025 mm, nsegment=2, lsegment=(2:50) m, length=100 m, elevation=-3.8 m
+PIPE label=pipe-16, wall=main, diameter=ZID m, roughness=0.025 mm, nsegment=2, lsegment=(2:50) m, length=100 m, elevation=-7.5 m
+PIPE label=pipe-17, wall=main, diameter=ZID m, roughness=0.025 mm, nsegment=2, lsegment=(2:50) m, length=100 m, elevation=3.6 m
+PIPE label=pipe-18, wall=main, diameter=ZID m, roughness=0.025 mm, nsegment=2, lsegment=(2:50) m, length=100 m, elevation=6 m
+PIPE label=pipe-19, wall=main, diameter=ZID m, roughness=0.025 mm, nsegment=2, lsegment=(2:50) m, length=100 m, elevation=5.3 m
+PIPE label=pipe-20, wall=main, diameter=ZID m, roughness=0.025 mm, nsegment=2, lsegment=(2:50) m, length=100 m, elevation=9.9 m
+PIPE label=pipe-21, wall=main, diameter=ZID m, roughness=0.025 mm, nsegment=2, lsegment=(2:50) m, length=100 m, elevation=9.1 m
+PIPE label=pipe-22, wall=main, diameter=ZID m, roughness=0.025 mm, nsegment=2, lsegment=(2:50) m, length=100 m, elevation=2 m
+PIPE label=pipe-23, wall=main, diameter=ZID m, roughness=0.025 mm, nsegment=2, lsegment=(2:50) m, length=100 m, elevation=-2.2 m
+PIPE label=pipe-24, wall=main, diameter=ZID m, roughness=0.025 mm, nsegment=2, lsegment=(2:50) m, length=100 m, elevation=-10.8 m
+PIPE label=pipe-25, wall=main, diameter=ZID m, roughness=0.025 mm, nsegment=2, lsegment=(2:50) m, length=100 m, elevation=1 m
+PIPE label=pipe-26, wall=main, diameter=ZID m, roughness=0.025 mm, nsegment=2, lsegment=(2:50) m, length=100 m, elevation=-14.3 m
+PIPE label=pipe-27, wall=main, diameter=ZID m, roughness=0.025 mm, nsegment=2, lsegment=(2:50) m, length=100 m, elevation=-7.8 m
+PIPE label=pipe-28, wall=main, diameter=ZID m, roughness=0.025 mm, nsegment=2, lsegment=(2:50) m, length=100 m, elevation=-6.1 m
+PIPE label=pipe-29, wall=main, diameter=ZID m, roughness=0.025 mm, nsegment=2, lsegment=(2:50) m, length=100 m, elevation=-7.4 m
+PIPE label=pipe-30, wall=main, diameter=ZID m, roughness=0.025 mm, nsegment=2, lsegment=(2:50) m, length=100 m, elevation=-10.8 m
+PIPE label=pipe-31, wall=main, diameter=ZID m, roughness=0.025 mm, nsegment=2, lsegment=(2:50) m, length=100 m, elevation=-6 m
+PIPE label=pipe-32, wall=main, diameter=ZID m, roughness=0.025 mm, nsegment=2, lsegment=(2:50) m, length=100 m, elevation=-2.3 m
+PIPE label=pipe-33, wall=main, diameter=ZID m, roughness=0.025 mm, nsegment=2, lsegment=(2:50) m, length=100 m, elevation=-5.3 m
+PIPE label=pipe-34, wall=main, diameter=ZID m, roughness=0.025 mm, nsegment=2, lsegment=(2:50) m, length=100 m, elevation=-12 m
+PIPE label=pipe-35, wall=main, diameter=ZID m, roughness=0.025 mm, nsegment=2, lsegment=(2:50) m, length=100 m, elevation=-7 m
+PIPE label=pipe-36, wall=main, diameter=ZID m, roughness=0.025 mm, nsegment=2, lsegment=(2:50) m, length=100 m, elevation=-4.5 m
+PIPE label=pipe-37, wall=main, diameter=ZID m, roughness=0.025 mm, nsegment=2, lsegment=(2:50) m, length=100 m, elevation=-4.9 m
+PIPE label=pipe-38, wall=main, diameter=ZID m, roughness=0.025 mm, nsegment=2, lsegment=(2:50) m, length=100 m, elevation=2.8 m
+PIPE label=pipe-39, wall=main, diameter=ZID m, roughness=0.025 mm, nsegment=2, lsegment=(2:50) m, length=100 m, elevation=4 m
+PIPE label=pipe-40, wall=main, diameter=ZID m, roughness=0.025 mm, nsegment=2, lsegment=(2:50) m, length=100 m, elevation=1.2 m
+PIPE label=pipe-41, wall=main, diameter=ZID m, roughness=0.025 mm, nsegment=2, lsegment=(2:49.95) m, length=99.9 m, elevation=-3 m
+PIPE label=pipe-42, wall=main, diameter=ZID m, roughness=0.025 mm, nsegment=2, lsegment=(2:50) m, length=100 m, elevation=-2.4 m
+PIPE label=pipe-43, wall=main, diameter=ZID m, roughness=0.025 mm, nsegment=2, lsegment=(2:50) m, length=100 m, elevation=-21.1 m
+PIPE label=pipe-44, wall=main, diameter=ZID m, roughness=0.025 mm, nsegment=2, lsegment=(2:50) m, length=100 m, elevation=-19.5 m
+PIPE label=pipe-45, wall=main, diameter=ZID m, roughness=0.025 mm, nsegment=2, lsegment=(2:50) m, length=100 m, elevation=-11.5 m
+PIPE label=pipe-46, wall=main, diameter=ZID m, roughness=0.025 mm, nsegment=2, lsegment=(2:50) m, length=100 m, elevation=-11.5 m
+PIPE label=pipe-47, wall=main, diameter=ZID m, roughness=0.025 mm, nsegment=2, lsegment=(2:50) m, length=100 m, elevation=-14.1 m
+PIPE label=pipe-48, wall=main, diameter=ZID m, roughness=0.025 mm, nsegment=2, lsegment=(2:50) m, length=100 m, elevation=-4.2 m
+PIPE label=pipe-49, wall=main, diameter=ZID m, roughness=0.025 mm, nsegment=2, lsegment=(2:50) m, length=100 m, elevation=-4.7 m
+PIPE label=pipe-50, wall=main, diameter=ZID m, roughness=0.025 mm, nsegment=2, lsegment=(2:50) m, length=100 m, elevation=-6.6 m
+PIPE label=pipe-51, wall=main, diameter=ZID m, roughness=0.025 mm, nsegment=2, lsegment=(2:50) m, length=100 m, elevation=-4.6 m
+PIPE label=pipe-52, wall=main, diameter=ZID m, roughness=0.025 mm, nsegment=2, lsegment=(2:50) m, length=100 m, elevation=-5.2 m
+PIPE label=pipe-53, wall=main, diameter=ZID m, roughness=0.025 mm, nsegment=2, lsegment=(2:50) m, length=100 m, elevation=-5 m
+PIPE label=pipe-54, wall=main, diameter=ZID m, roughness=0.025 mm, nsegment=2, lsegment=(2:50) m, length=100 m, elevation=-8.2 m
+PIPE label=pipe-55, wall=main, diameter=ZID m, roughness=0.025 mm, nsegment=2, lsegment=(2:50) m, length=100 m, elevation=-11.9 m
+PIPE label=pipe-56, wall=main, diameter=ZID m, roughness=0.025 mm, nsegment=2, lsegment=(2:50) m, length=100 m, elevation=-6.2 m
+PIPE label=pipe-57, wall=main, diameter=ZID m, roughness=0.025 mm, nsegment=2, lsegment=(2:50) m, length=100 m, elevation=-3.6 m
+PIPE label=pipe-58, wall=main, diameter=ZID m, roughness=0.025 mm, nsegment=2, lsegment=(2:50) m, length=100 m, elevation=-2.7 m
+PIPE label=pipe-59, wall=main, diameter=ZID m, roughness=0.025 mm, nsegment=2, lsegment=(2:50) m, length=100 m, elevation=-5.4 m
+PIPE label=pipe-60, wall=main, diameter=ZID m, roughness=0.025 mm, nsegment=2, lsegment=(2:49.9) m, length=99.8 m, elevation=-8.1 m
+PIPE label=pipe-61, wall=main, diameter=ZID m, roughness=0.025 mm, nsegment=2, lsegment=(2:50) m, length=100 m, elevation=-6.7 m
+PIPE label=pipe-62, wall=main, diameter=ZID m, roughness=0.025 mm, nsegment=2, lsegment=(2:50) m, length=100 m, elevation=0.9 m
+PIPE label=pipe-63, wall=main, diameter=ZID m, roughness=0.025 mm, nsegment=2, lsegment=(2:50) m, length=100 m, elevation=5.3 m
+PIPE label=pipe-64, wall=main, diameter=ZID m, roughness=0.025 mm, nsegment=2, lsegment=(2:50) m, length=100 m, elevation=-3.9 m
+PIPE label=pipe-65, wall=main, diameter=ZID m, roughness=0.025 mm, nsegment=2, lsegment=(2:50) m, length=100 m, elevation=-7.8 m
+PIPE label=pipe-66, wall=main, diameter=ZID m, roughness=0.025 mm, nsegment=2, lsegment=(2:50) m, length=100 m, elevation=-4 m
+PIPE label=pipe-67, wall=main, diameter=ZID m, roughness=0.025 mm, nsegment=2, lsegment=(2:50) m, length=100 m, elevation=-10.2 m
+PIPE label=pipe-68, wall=main, diameter=ZID m, roughness=0.025 mm, nsegment=2, lsegment=(2:50) m, length=100 m, elevation=-15.7 m
+PIPE label=pipe-69, wall=main, diameter=ZID m, roughness=0.025 mm, nsegment=2, lsegment=(2:50) m, length=100 m, elevation=-16.6 m
+PIPE label=pipe-70, wall=main, diameter=ZID m, roughness=0.025 mm, nsegment=2, lsegment=(2:50) m, length=100 m, elevation=-9 m
+
+NODE label="BB3", type=terminal
+NODE label="EPF", type=terminal
+
+BRANCH label="bb3 to epf", from=bb3, to=epf, geometry=bb3, fluid=BB3-GOR300
+
+BOUNDARY node="BB3", type=closed
+BOUNDARY node="EPF", type=pressure, pressure=10 bara, time=0 s, gasfraction=-1, temperature=-10 C
+
+POSITION label="inlet", branch="bb3 to epf", pipe=pipe-1, section=1
+POSITION label="outlet", branch="bb3 to epf", pipe=pipe-70, section=2
+
+HEATTRANSFER branch="bb3 to epf", tambient=10 C, houteroption=air, velocity=0 m/s
+
+SOURCE label="bb3", branch="bb3 to epf", pipe=pipe-1, section=1, massflow=ZGT kg/s, temperature=ZTM C, time=0, waterfraction=ZWCUT
+
+OUTPUT dtout=1 h
+
+TREND dtplot=15 s
+TREND variable=(volgbl, ht)
+TREND branch="bb3 to epf", variable=(liqc, watc, oilc, liqin, liqout)
+TREND branch="bb3 to epf", position="outlet", variable=(pt, tm, hol, holwt, accliq)
+
+PROFILE dtplot=10 m
+PROFILE branch="bb3 to epf", variable=(tm, pt, hol, holwt, q2, incl, id, idiam, tu, ug, ul, ulwt, qlthl, qltwt, gt, evr)
+
+ENDCASE 
