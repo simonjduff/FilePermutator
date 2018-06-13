@@ -18,7 +18,7 @@ Powershell is a scripting console built into modern Windows PCs.
 You can open powershell by pressting the Start button, then typing "powershell".
 
 ## Executing scripts
-The Powershell environment is like a normal DOS prompt in many ways. The usual commands work.
-CD into the directory that contains the GenerateFiles.ps1 file.
-then type:
+The Powershell environment is like a normal DOS prompt in many ways. The usual commands work.  
+CD into the directory that contains the GenerateFiles.ps1 file.  
+then type:  
 ./GenerateFiles.ps1 -templateFile &lt;name of template file&gt; -replacements &lt;token definitions&gt;
