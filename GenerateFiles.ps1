@@ -22,12 +22,6 @@ foreach ($r in $replacementTokens)
     }
 }
 
-# foreach ($key in $dictionary.Keys){
-#     foreach ($v in $dictionary[$key]){
-#         Write-Host "$key $v";
-#     }
-# }
-
 $fileCount = 0;
 function WriteFile($data){
     Write-Host Writing $fileCount
